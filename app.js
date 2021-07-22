@@ -36,7 +36,7 @@ app.get("/products", (req, res) => {
 app.get("/product/:productId", (req, res) => {
   console.log(req.params);
   const product = products.find((p) => p.id === req.params.productId);
-//   console.log(product);
+  //   console.log(product);
   res.render("product", { product });
 });
 
